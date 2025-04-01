@@ -73,7 +73,7 @@ namespace Aula_2_Coletto
             // Exercício 3
             void CalculaValorAPagar()
             {
-                double valorProduto = 0, valorTotal = 0, valorPago = 0, troco = 0;
+                double valorProduto = 0, valorTotal = 0, valorPago = 0;
                 int qtdProduto = 0;
                 bool converteuDouble = false;
 
@@ -125,7 +125,7 @@ namespace Aula_2_Coletto
                 Console.WriteLine("Valor pago: R$" + valorPago.ToString("N2"));
                 if (valorPago > valorTotal)
                 {
-                    Console.WriteLine("Troco a receber: R$" + (valorPago - valorTotal));
+                    Console.WriteLine("Troco a receber: R$" + (valorPago - valorTotal).ToString("N2"));
                 }
                 else if (valorPago < valorTotal)
                 {
